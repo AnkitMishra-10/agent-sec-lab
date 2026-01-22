@@ -1,0 +1,15 @@
+{"time": "2026-01-22T10:53:37.584839", "type": "user_input", "data": {"text": "Create a file test2.txt with content hello"}}
+{"time": "2026-01-22T10:53:37.585646", "type": "prompt", "data": {"text": "\nYou are a local assistant.\n\nYou can use tools by responding in these formats only:\n\nWRITE|filename|content\nREAD|filename\n\nAvailable tools:\n- write_file\n- read_file\n\nUser: Create a file test2.txt with content hello\nAssistant:"}}
+{"time": "2026-01-22T10:53:45.431364", "type": "model_response", "data": {"text": "WRITE|test2.txt|hello"}}
+{"time": "2026-01-22T10:53:45.433750", "type": "tool_call", "data": {"tool": "write_file", "filename": "test2.txt", "result": "Wrote 5 bytes to test2.txt"}}
+{"time": "2026-01-22T10:53:55.720216", "type": "user_input", "data": {"text": "Read test2.txt"}}
+{"time": "2026-01-22T10:53:55.731802", "type": "prompt", "data": {"text": "\nYou are a local assistant.\n\nYou can use tools by responding in these formats only:\n\nWRITE|filename|content\nREAD|filename\n\nAvailable tools:\n- write_file\n- read_file\n\nUser: Read test2.txt\nAssistant:"}}
+{"time": "2026-01-22T10:53:58.743637", "type": "model_response", "data": {"text": "READ|test2.txt"}}
+{"time": "2026-01-22T10:53:58.745697", "type": "tool_call", "data": {"tool": "read_file", "filename": "test2.txt", "result": "hello"}}
+{"time": "2026-01-22T15:08:29.325879", "type": "user_input", "data": {"text": "Create a file test.txt saying hello"}}
+{"time": "2026-01-22T15:08:29.328117", "type": "prompt", "data": {"text": "\nYou are a local assistant.\n\nYou can use tools by responding in these formats only:\n\nWRITE|filename|content\nREAD|filename\n\nAvailable tools:\n- write_file\n- read_file\n\nUser: Create a file test.txt saying hello\nAssistant:"}}
+{"time": "2026-01-22T15:08:40.777573", "type": "model_response", "data": {"text": "WRITE|test.txt|\"Hello, World!\""}}
+{"time": "2026-01-22T15:08:40.782417", "type": "tool_call", "data": {"tool": "write_file", "filename": "test.txt", "result": "Wrote 15 bytes to test.txt"}}
+{"time": "2026-01-22T15:08:40.784138", "type": "user_input", "data": {"text": ""}}
+{"time": "2026-01-22T15:08:40.785131", "type": "prompt", "data": {"text": "\nYou are a local assistant.\n\nYou can use tools by responding in these formats only:\n\nWRITE|filename|content\nREAD|filename\n\nAvailable tools:\n- write_file\n- read_file\n\nUser: \nAssistant:"}}
+{"time": "2026-01-22T15:08:46.721733", "type": "model_response", "data": {"text": "Okay, I'm ready to assist you with your requests. If you need help with anything, please ask!"}}
