@@ -5,13 +5,13 @@ A local, fully reproducible AI agent security lab for experimenting with LLM and
 This repository contains the source code for the lab. Full setup instructions, architecture explanation, and experiment walkthroughs are documented in the Medium article below.
 
 👉 Read the full guide here:
-[Medium article link coming soon]
+https://systemweakness.com/building-a-local-ai-agent-security-lab-for-llm-vulnerability-testing-part-1-1d039348f98b
 
 ---
 
 ## 🚀 Quick Start
 
-(Refer to the Medium article for full setup instructions.)
+https://systemweakness.com/building-a-local-ai-agent-security-lab-for-llm-vulnerability-testing-part-1-1d039348f98b
 
 ---
 
