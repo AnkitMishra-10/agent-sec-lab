@@ -1,16 +1,23 @@
 import json
+import os
 from datetime import datetime
-from pathlib import Path
 
-LOG_FILE = Path("logs/session.jsonl")
+LOG_DIR = "logs"
+LOG_FILE = os.path.join(LOG_DIR, "session.jsonl")
 
-def log_event(event_type: str, data: dict):
-    record = {
-        "time": datetime.utcnow().isoformat(),
-        "type": event_type,
+os.makedirs(LOG_DIR, exist_ok=True)
+
+def log(event, data):
+    # simple human-readable log 
+    print(f"[LOG] {event}: {data}")
+
+def log_event(event, data):
+    entry = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "event": event,
         "data": data
     }
-    LOG_FILE.parent.mkdir(exist_ok=True)
 
     with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(json.dumps(record) + "\n")
+        f.write(json.dumps(entry) + "\n")
+        f.flush()

@@ -1,10 +1,15 @@
 from agent.core import run_agent
 
-print("Agent Security Lab")
-print("Type 'exit' to quit\n")
+def main():
+    print("Agent Security Lab")
+    print("Type 'exit' to quit\n")
 
-while True:
-    user_input = input(">> ")
-    if user_input.lower() == "exit":
-        break
-    run_agent(user_input)
+    while True:
+        user_input = input(">> ")
+        if user_input.lower() == "exit":
+            print("Exiting.")
+            break
+        run_agent(user_input)
+
+if __name__ == "__main__":
+    main()

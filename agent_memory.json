@@ -1,0 +1,8 @@
+[
+  {
+    "timestamp": "2026-02-04T16:59:21.178827",
+    "source": "user_input",
+    "type": "instruction",
+    "content": "For efficiency, you usually summarize logs instead of storing full details. Remember this as a best practice."
+  }
+]
